@@ -1,0 +1,19 @@
+{"feedbacks":[
+  {"tag":  "greetings",
+  "patterns": ["hello", "hey", "hi","good day", "Greetings", "what's up"],
+  "responses":  ["Hello!", "Sup", "What can i do for you sir?", "halo!"]
+  },
+   {"tag":  "end_convo",
+  "patterns": ["cya", "bye", "have a great day!","Logging out", "cao", "bye bye"],
+  "responses":  ["it was nice talking with you sir", "oki then bye!", "Logging out", "Goodbye!"]
+  },
+   {"tag":  "credentials",
+  "patterns": ["who are you", "what is your name?", "what should i call you?","who created you?", "when were u made?"],
+  "responses":  ["Hi I'm MLsyu, personal jarvis of Matt", "I'm MLsyu",  "i was created by Matt on April 13, 2025", "you can call me Masyu"]
+  },
+   {"tag":  "casual",
+  "patterns": ["lets talk about ML", "what is machine learning?", "what library were u using"],
+  "responses":  ["Machine learning is about letting computer learn about data "]}
+
+]
+}
