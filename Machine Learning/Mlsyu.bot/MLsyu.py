@@ -36,7 +36,7 @@ pickle.dump(classes, open('classes.pkl', 'wb'))
 
 training = []
 output_array = [0]  * len(classes)
-
+#Logic for replies
 for document in documents:
     bag = []
     word_patterns = document[0]
@@ -47,12 +47,12 @@ for document in documents:
     output_row = list(output_array)
     output_row[classes.index(document[1])] = 1
     training.append(bag + output_row)
-
+#Model training section
 random.shuffle(training)
 training = np.array(training)
 train_x = training[:, :-len(classes)]
 train_y = training[:, -len(classes):]
-
+#Utilizing Tensorflow 
 model = tf.keras.Sequential()
 model.add(tf.keras.layers.Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
 model.add(tf.keras.layers.Dropout(0.5))
